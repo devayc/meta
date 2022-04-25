@@ -1,0 +1,62 @@
+.header {
+    &__container {
+        padding: 15px 0;
+    }
+    &__content {
+        position: relative;
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    &__burger{
+        display: none;
+        background: rgba(31, 32, 65, 0.5);
+        width: 25px;
+        height: 5px;
+        border-radius: 2px;
+        position: relative;
+        &::before {
+            content: " ";
+            background: rgba(31, 32, 65, 0.5);
+            width: 25px;
+            height: 5px;
+            border-radius: 2px;
+            position: absolute;
+            top: -10px;
+        }
+
+        &::after{
+            content: " ";
+            background: rgba(31, 32, 65, 0.5);
+            width: 25px;
+            height: 5px;
+            border-radius: 2px;
+            position: absolute;
+            top: 10px;
+        }
+
+    }
+    &__menu {
+        display: flex;
+        gap: 20px;
+        align-items:center;
+        
+    }
+    &__nav {
+        display: flex;
+        gap: 20px;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    &__log-in {
+        display: flex;
+        gap: 20px;
+        align-items:center;
+        
+        a{
+            padding: 8px 20px;
+        }
+        
+
+    }
+}

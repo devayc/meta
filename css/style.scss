@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Icons;
+    src: url(/fonts/MaterialIcons-Regular.ttf);
+}
+@import "./reset";
+@import "./standart";
+@import "./header";
+@import "./main";
+
+@media(max-width: 678px){
+    .header_nav-container{
+        display: none;
+    }
+    .header__nav{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        position: absolute;
+        top: 50px;
+        background: #fff;
+        left: 50px;
+        font-size: 24px;
+        span{
+            display: none;
+        }
+    }
+    .header__burger{
+        display: block;
+        margin: 20px  6px;
+    }
+}
