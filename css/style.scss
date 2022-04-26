@@ -2,11 +2,43 @@
     font-family: Icons;
     src: url(/fonts/MaterialIcons-Regular.ttf);
 }
+
 @import "./reset";
 @import "./standart";
 @import "./header";
 @import "./main";
+@import "./footer";
 
+.fa-brands {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;    
+    display: flex;
+    align-items: center; 
+    text-align: center;  
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+@media(max-width:1068px){
+    .footer__subscribe {
+        padding: none;
+    }
+}
+@media(max-width:897px){
+    .footer__content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer__items{
+        margin-top: 25px;
+    }
+    
+}
 @media(max-width: 678px){
     .header_nav-container{
         display: none;
@@ -27,5 +59,14 @@
     .header__burger{
         display: block;
         margin: 20px  6px;
+    }
+}
+@media(max-width:431px) {
+    .header__log-in{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .header__content{
+        align-items:normal;
     }
 }
