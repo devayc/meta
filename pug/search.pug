@@ -1,0 +1,43 @@
+.search
+    .search__container
+        h1 Найдём номера под ваши пожелания
+        .search__date
+            .search__date-item
+                h3 прибытие
+                form(class ="enter-date" action="")
+                    input( class = "input-form input-form__input"  type="text" placeholder = "ДД.ММ.ГГ" readonly)
+                    input(class = "Icons input-form__button" type="submit" value = "expand_more")
+            .search__date-item
+                h3 выезд
+                form(class ="enter-date" action="")
+                    input(class = "input-form input-form__input" type="text" placeholder = "ДД.ММ.ГГ" readonly)
+                    input(class = "Icons input-form__button" type="submit" value = "expand_more")
+        .search__members-container
+            .search__members
+                h3 гости
+                form( class ="enter-date" action="")
+                    input( class = "input-form input-form__input"  type="text" placeholder = "" readonly)
+                    input( class = "Icons input-form__button" id = "slide-drop-down" type="submit" value = "expand_more" )
+            .search__drop-down
+                .drop-down__elements
+                    .drop-down__element
+                        h3 врослые
+                        .drop-down__counter
+                            .minus -
+                            .count 0
+                            .pluse +        
+                    .drop-down__element
+                        h3 дети
+                        .drop-down__counter
+                            .minus -
+                            .count 0
+                            .pluse +        
+                    .drop-down__element
+                        h3 младенцы
+                        .drop-down__counter
+                            .minus -
+                            .count 0
+                            .pluse + 
+                .drop-down__buttons
+                    input(class = "default-button" type="submit" value = "очистить")         
+                    input(class = "default-button" type="submit" value = "применить")         

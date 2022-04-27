@@ -1,0 +1,130 @@
+.search {
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: #fff;
+    width: 380px;
+
+
+    height: 374px;
+    // .search__date
+    &__container{
+        margin: 0 auto;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+        gap: 20px;
+
+        position: relative;
+        h3 {
+            margin-bottom: 5px;
+        }
+    }
+        &__date {
+            display: flex;
+            gap: 20px;
+           
+        }
+
+        // .search__
+
+        &__date-item {
+            
+
+            // .search___date-item
+
+        }
+
+        // .search__members
+
+        &__members {
+            input[type = "text"]{
+                border: 1px solid rgba(31, 32, 65, 0.5);
+                border-bottom-left-radius:0;
+                border-bottom-right-radius: 0;;
+            }
+        }
+
+        // .search__drop-down
+        &__members-container{
+            position: relative;
+        }
+        &__drop-down {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+            bottom: 1px;
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+            padding: 13px 15px;
+            gap: 27px;
+        }
+
+}
+
+
+
+.drop-down {
+    
+    // .drop-down__element
+    &__elements{
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__element {
+        align-items:center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .drop-down__counter
+
+    &__counter {
+        display: flex;
+        align-items:bottom;
+        gap: 12px;
+    }
+
+    // .drop-down__buttons
+
+    &__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.minus {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(31, 32, 65, 0.5);
+    text-align: center;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    width: 30px;
+    padding: 6px 0 9px 0;
+    height: 30px;
+    padding-top: 2px;
+}
+
+.count {
+    width: 9.28px;
+}
+
+.pluse {
+    text-align: center;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px ;
+}

@@ -6,7 +6,36 @@ body{
     line-height: 171%;
     color: rgba(31, 32, 65, 0.75);
 }
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
 
+    color: #1F2041;
+}
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+
+
+    color: #1F2041;
+}
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    
+    text-transform: uppercase;
+    
+    color: #1F2041
+}
 .container{
     max-width:1166px;
     margin: 0 auto;
@@ -37,7 +66,7 @@ a{
 .logo{
     margin-right: 15px ;
 }
-.button-back{
+.button-back{ // КНОПКА С ЗАДНИМ ФОНОМ
     padding: 15px 20px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
@@ -60,7 +89,7 @@ a{
     }
 
 }
-.button-no-back{
+.button-no-back{    // КНОПКА С БОРДЕРОМ  
     border: 2px solid;
     border: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     padding: 15px 20px;
@@ -88,10 +117,25 @@ a{
         color: #BC9CFF;
     }
 }
-.input-form{
+.default-button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;    
+    color: #BC9CFF;
+    -webkit-background-clip: text;
+    border:none;
+}
+.input-form{ // ФОРМА ДЛЯ ВВОДА 
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
+
+    width: 100%;
+    height: 44px;
+    -webkit-appearance: none;
     &::placeholder{
         color: rgba(31, 32, 65, 0.25);
     }
@@ -124,4 +168,23 @@ a{
             font-size: 20px;
             font-weight: bold;
         }
+}
+
+.input-form__button {// кнопка к форме в виде галочки 
+    color: rgba(31, 32, 65, 0.5);
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Icons;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    -webkit-background-clip: text;
+}
+.enter-date {
+    position: relative;
 }

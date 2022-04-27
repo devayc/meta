@@ -8,11 +8,13 @@
     // .main__container
 
     &__container {
+        padding-top: 70px;
         height: 100%;
         display: flex;
-        align-items:flex-end;
-        justify-content: flex-end;
+        justify-content: space-between;
+        flex-direction: column;
         p{  
+            align-self: flex-end;
             text-align: right;
             width: 297px;
         }
