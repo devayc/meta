@@ -39,6 +39,9 @@ h3{
 .container{
     max-width:1166px;
     margin: 0 auto;
+    & > *{
+        margin: 0 15px;
+    }
 }
 a{
     font-family: 'Montserrat';
@@ -138,6 +141,7 @@ a{
     -webkit-appearance: none;
     &::placeholder{
         color: rgba(31, 32, 65, 0.25);
+        padding-left: 15px;
     }
     &:focus, &:hover {
         outline: 0;
@@ -187,4 +191,31 @@ a{
 }
 .enter-date {
     position: relative;
+}
+.input-form__back{ // ввод с синим бэком
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    border:none;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.input-form__back-button{// кнопка с синим бэком
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.opacuty{
+    opacity: 0.25;
 }

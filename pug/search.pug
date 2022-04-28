@@ -16,28 +16,32 @@
             .search__members
                 h3 гости
                 form( class ="enter-date" action="")
-                    input( class = "input-form input-form__input"  type="text" placeholder = "" readonly)
+                    input( class = "input-form input-form__input"  type="text" placeholder = "Сколько гостей" readonly)
                     input( class = "Icons input-form__button" id = "slide-drop-down" type="submit" value = "expand_more" )
             .search__drop-down
-                .drop-down__elements
-                    .drop-down__element
-                        h3 врослые
-                        .drop-down__counter
-                            .minus -
-                            .count 0
-                            .pluse +        
-                    .drop-down__element
-                        h3 дети
-                        .drop-down__counter
-                            .minus -
-                            .count 0
-                            .pluse +        
-                    .drop-down__element
-                        h3 младенцы
-                        .drop-down__counter
-                            .minus -
-                            .count 0
-                            .pluse + 
-                .drop-down__buttons
-                    input(class = "default-button" type="submit" value = "очистить")         
-                    input(class = "default-button" type="submit" value = "применить")         
+                .search__drop-container
+                    .drop-down__elements
+                        .drop-down__element
+                            h3 врослые
+                            .drop-down__counter
+                                .minus.opacuty#minus -
+                                h3.count#addult 0
+                                .pluse +        
+                        .drop-down__element
+                            h3 дети
+                            .drop-down__counter
+                                .minus.opacuty#minus -
+                                h3.count#addult 0
+                                .pluse +        
+                        .drop-down__element
+                            h3 младенцы
+                            .drop-down__counter
+                                .minus.opacuty#minus -
+                                h3.count#young 0
+                                .pluse + 
+                    form.drop-down__buttons
+                        input(class = "default-button" type="submit" id = "clear" value = "очистить")         
+                        input(class = "default-button" type="submit" id = "confirm" value = "применить")  
+        form(class = "enter-date" action="") 
+            input(class = "input-form input-form__back" type="text"  value = "подобрать номер")
+            input(class = "input-form__button input-form__back-button"  type = "submit" value = "arrow_forward")

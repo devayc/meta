@@ -47,7 +47,11 @@
                 border-bottom-right-radius: 0;;
             }
         }
-
+        &__drop-container{
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+        }
         // .search__drop-down
         &__members-container{
             position: relative;
@@ -58,12 +62,15 @@
             flex-direction: column;
             position: relative;
             width: 100%;
-            bottom: 1px;
+            top: 63px;
+            z-index: 2;
             border: 1px solid rgba(31, 32, 65, 0.5);
             box-sizing: border-box;
             box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-            padding: 13px 15px;
+            padding: 13px 5px 13px 15px;
             gap: 27px;
+            position: absolute;
+            display: none;
         }
 
 }
@@ -118,6 +125,7 @@
 
 .count {
     width: 9.28px;
+    line-height: 25px;
 }
 
 .pluse {

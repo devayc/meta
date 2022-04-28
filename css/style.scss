@@ -60,7 +60,7 @@
     }
     .header__burger{
         display: block;
-        margin: 20px  6px;
+        margin: 20px  20px;
     }
 }
 @media(max-width:431px) {
@@ -70,5 +70,8 @@
     }
     .header__content{
         align-items:normal;
+    }
+    .search{
+        max-width: 100%;
     }
 }
