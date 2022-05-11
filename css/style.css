@@ -720,6 +720,67 @@ a:hover {
   padding-top: 2px;
 }
 
+.air-datepicker-nav--title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #1F2041;
+}
+
+.air-datepicker-nav--title i {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #1F2041;
+}
+
+.air-datepicker-body--day-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #bc9cff;
+  text-transform: none;
+}
+
+.air-datepicker-nav {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 0;
+  border: none;
+}
+
+.-day- {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+
 .fa-brands {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;

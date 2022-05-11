@@ -5,12 +5,12 @@
             .search__date-item
                 h3 прибытие
                 form(class ="enter-date" action="")
-                    input( class = "input-form input-form__input"  type="text" placeholder = "ДД.ММ.ГГ" readonly)
-                    input(class = "Icons input-form__button" type="submit" value = "expand_more")
+                    input( class = "input-form input-form__input"  id = "inputform" type="text" placeholder = "ДД.ММ.ГГ" readonly )
+                    input(class = "Icons input-form__button" id = "input" type="submit" value = "expand_more")
             .search__date-item
                 h3 выезд
                 form(class ="enter-date" action="")
-                    input(class = "input-form input-form__input" type="text" placeholder = "ДД.ММ.ГГ" readonly)
+                    input#output(class = "input-form input-form__input"  type="text" placeholder = "ДД.ММ.ГГ" readonly)
                     input(class = "Icons input-form__button" type="submit" value = "expand_more")
         .search__members-container
             .search__members
@@ -43,5 +43,6 @@
                         input(class = "default-button" type="submit" id = "clear" value = "очистить")         
                         input(class = "default-button" type="submit" id = "confirm" value = "применить")  
         form(class = "enter-date" action="") 
-            input(class = "input-form input-form__back" type="text"  value = "подобрать номер")
+            input(class = "input-form input-form__back" type="text"  value = "подобрать номер" readonly)
             input(class = "input-form__button input-form__back-button"  type = "submit" value = "arrow_forward")
+            
