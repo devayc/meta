@@ -151,7 +151,7 @@ a {
   color: rgba(31, 32, 65, 0.5);
 }
 
-a:hover {
+.header a:hover {
   color: rgba(31, 32, 65, 0.75);
   -webkit-transform: rotate(0.23deg);
           transform: rotate(0.23deg);
@@ -247,36 +247,27 @@ a:hover {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
+  padding-left: 15px;
   width: 100%;
   height: 44px;
   -webkit-appearance: none;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .input-form::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
 }
 
 .input-form:-ms-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
 }
 
 .input-form::-ms-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
 }
 
 .input-form::placeholder {
   color: rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
-}
-
-.input-form:focus, .input-form:hover {
-  outline: 0;
-  outline-offset: 0;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
 }
 
 .arrow__forward {
@@ -330,6 +321,7 @@ a:hover {
   border-radius: 22px;
   border: none;
   text-align: center;
+  cursor: pointer;
   font-size: 12px;
   line-height: 15px;
   font-weight: 700;
@@ -548,6 +540,13 @@ a:hover {
   -webkit-appearance: none;
 }
 
+.email:focus, .email:hover {
+  outline: 0;
+  outline-offset: 0;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+}
+
 .footer__copyright-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,6 +703,7 @@ a:hover {
   padding: 6px 0 9px 0;
   height: 30px;
   padding-top: 2px;
+  cursor: pointer;
 }
 
 .count {
@@ -718,6 +718,7 @@ a:hover {
   width: 30px;
   height: 30px;
   padding-top: 2px;
+  cursor: pointer;
 }
 
 .air-datepicker-nav--title {
@@ -777,8 +778,55 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  border-radius: 50%;
   /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
+}
+
+.air-datepicker--content {
+  margin: 0 21px 0 21px;
+}
+
+.air-datepicker {
+  width: 320px;
+  min-height: 369px;
+}
+
+.-day-:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.reg__container {
+  background-image: url(/img/regformbackjpg.jpg);
+  padding: 17px 0 21px 0;
+}
+
+.reg__form {
+  background-color: #fff;
+  height: 100%;
+  margin: 0 auto;
+  width: 390px;
+  padding: 42px 30px 28px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.reg__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
 }
 
 .fa-brands {

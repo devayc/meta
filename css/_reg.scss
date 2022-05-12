@@ -1,0 +1,28 @@
+.reg {
+
+    // .reg__container
+
+    &__container {
+        background-image: url(/img/regformbackjpg.jpg) ;
+        padding: 17px 0 21px 0;
+    }
+
+    // .reg__form
+
+    &__form {
+        background-color: #fff;
+        height: 100%;
+        margin: 0 auto;
+        width: 390px;
+        padding: 42px 30px 28px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+    }
+}

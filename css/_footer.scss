@@ -15,6 +15,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         padding: 91px 0 81px 0;
+        
     }
 
     // .footer__items
@@ -74,7 +75,13 @@
     width: 100%;
     height: 42px; 
     -webkit-appearance: none;
-    
+    &:focus,
+        &:hover {
+            outline: 0;
+            outline-offset: 0;
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            color: rgba(31, 32, 65, 0.75);
+        }
 }
 
 

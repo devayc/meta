@@ -48,12 +48,15 @@ a{
     font-weight: 400;
     line-height: 121%;
     color: rgba(31, 32, 65, 0.5);
-    &:hover{
-        color: rgba(31, 32, 65, 0.75);
-        transform: rotate(0.23deg);
-        font-weight: 700;
-    }
+   
 }
+.header a{
+    &:hover {
+            color: rgba(31, 32, 65, 0.75);
+            transform: rotate(0.23deg);
+            font-weight: 700;
+        }
+} 
 
 .Icons{
     font-family: Icons;
@@ -135,20 +138,16 @@ a{
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
-
+    padding-left: 15px;
     width: 100%;
     height: 44px;
     -webkit-appearance: none;
+    color: rgba(31, 32, 65, 0.75);
     &::placeholder{
         color: rgba(31, 32, 65, 0.25);
-        padding-left: 15px;
+       
     }
-    &:focus, &:hover {
-        outline: 0;
-        outline-offset: 0;
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        color: rgba(31, 32, 65, 0.75);
-    }
+   
 }
 .arrow__forward{
     font-size: 24px;
@@ -197,7 +196,7 @@ a{
     border-radius: 22px;
     border:none;
     text-align: center;
-
+    cursor: pointer;
     font-size: 12px;
     line-height: 15px;
     font-weight: 700;

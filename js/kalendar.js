@@ -9,12 +9,13 @@ let confirm = {
 let close = {
     content: 'очистить',
     className: 'default-button',
-  onClick: (AirDatepicker)=>{
-    AirDatepicker.clear()
-    $('#output').val('')
-    $('#inputform').val('')
-  }
+    onClick: (AirDatepicker) => {
+        AirDatepicker.clear()
+        $('#output').val('')
+        $('#inputform').val('')
+    }
 }
+let mach = false
 
 new AirDatepicker('#input', {
     range: true,
@@ -32,11 +33,5 @@ new AirDatepicker('#input', {
 },
     buttons: [close, confirm ],
     autoClose: false,
-    inline: true,
-    
-
 })
-$('#input').on('click', (AirDatepicker) => {
-    AirDatepicker.show()
-    
-})
+console.log(mach)

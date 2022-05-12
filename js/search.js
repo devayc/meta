@@ -61,9 +61,9 @@ function accept(a) {
     })
     yongIner = parseInt(young[0].innerText)
     if (yongIner === 0) {
-        $(placeholedTitle).attr('placeholder',`${summary} гостей`)    
+        $(placeholedTitle).attr('value',`${summary} гостей`)    
     } else {
-        $(placeholedTitle).attr('placeholder',`${summary} гостей ${yongIner} младенцев`)
+        $(placeholedTitle).attr('value',`${summary} гостей ${yongIner} младенцев`)
     }
 
     
