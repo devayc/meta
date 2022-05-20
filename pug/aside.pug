@@ -1,0 +1,58 @@
+.aside__container
+    .aside-form
+        .aside__form-container
+            .asie__visit-date
+                h3 даты пребывания в отеле
+                form(class ="enter-date" action="")
+                    input( class = "input-form input-form__input"  type="text" value = " " readonly)
+                    input( class = "Icons input-form__button" id = "slide-drop-down" type="submit" value = "expand_more" )
+            .search__members-container
+                .search__members
+                    h3 гости
+                    form(class ="enter-date" action="")
+                        input( class = "input-form input-form__input"  type="text" placeholder = "Сколько гостей" readonly)
+                        input( class = "Icons input-form__button" id = "slide-drop-down" type="submit" value = "expand_more" )
+                .search__drop-down
+                    .search__drop-container
+                        .drop-down__elements
+                            .drop-down__element
+                                h3 врослые
+                                .drop-down__counter
+                                    .minus.opacuty#minus -
+                                    h3.count#addult 0
+                                    .pluse +        
+                            .drop-down__element
+                                h3 дети
+                                .drop-down__counter
+                                    .minus.opacuty#minus -
+                                    h3.count#addult 0
+                                    .pluse +        
+                            .drop-down__element
+                                h3 младенцы
+                                .drop-down__counter
+                                    .minus.opacuty#minus -
+                                    h3.count#young 0
+                                    .pluse + 
+                        form.drop-down__buttons
+                            input(class = "default-button" type="submit" id = "clear" value = "очистить")         
+                            input(class = "default-button" type="submit" id = "confirm" value = "применить")
+            .aside__data-range-container
+                .aside__data-range
+                    h3 диапазон цены
+                    .data-range__count
+                        span#input0 5 000₽ 
+                        span -
+                        span#input1 10 000₽
+                #slider
+                span Стоимость за сутки пребывания в номере
+            .aside__home-rules
+                h3 правила дома
+                .home-rules__item
+                    input(type="checkbox" name = 'smoke')
+                    label(for = 'smoke') Можно курить
+                .home-rules__item
+                    input(type="checkbox" name = 'pets')
+                    label(for = 'pets') Можно с питомцами
+                .home-rules__item
+                    input(type="checkbox" name = 'guest')
+                    label(for = 'guest') Можно пригласить гостей  (до 10 человек)

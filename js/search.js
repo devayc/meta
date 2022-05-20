@@ -49,6 +49,7 @@ function slide(a) {
 
 }
 function accept(a) {
+    console.log('dsdsdsds')
     let summary = 0
     element = $(a.target).closest('.search__drop-down')
     number = $(element).find('[id = addult]') 

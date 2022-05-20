@@ -1,0 +1,13 @@
+.reg_form__back 
+    .reg__container.container
+        form.reg__form
+            h1 Войти
+            .reg__form__enter__data
+                input(class = "input-form" type="email" placeholder="Email")
+                input(class = "input-form" type="password" placeholder="Пароль")
+            .enter-date 
+                input(class = "input-form input-form__back" type="text"  value = "войти" readonly)
+                input(class = "input-form__button input-form__back-button"  type = "submit" value = "arrow_forward")
+            .reg__form__else-get-acc
+                p Нет аккаунта на Toxin ?
+                a.button-no-back(href = "/html/pug/registration.html") создать

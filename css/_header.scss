@@ -47,6 +47,13 @@
         gap: 20px;
         align-items:center;
         flex-wrap: wrap;
+        a{
+            &:hover {
+                    color: rgba(31, 32, 65, 0.75);
+                    transform: rotate(0.23deg);
+                    font-weight: 700;
+                }
+        }
     }
     &__log-in {
         display: flex;

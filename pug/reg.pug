@@ -1,11 +1,30 @@
-.reg__container.container
-    .reg__form
-        h1 Регистрация аккаунта
-        form(action="")
-            input(class = "input-form" type="text" placeholder="Имя") 
-            input(class = "input-form" type="text" placeholder="Фамилия")
-            .gender
-                input(type="radio" name="man" value="Мужчина")
-                lable(for ="man") Мужчина
-                input(type="radio" name="woman" value="Женщина")
-                lable(for ="woman") Женщина
+.reg_form__back 
+    .reg__container.container
+        form.reg__form
+            h1 Регистрация аккаунта
+            .reg__form__initial
+                input(class = "input-form" type="text" placeholder="Имя") 
+                input(class = "input-form" type="text" placeholder="Фамилия")
+                .gender
+                    input(type="radio" name="gender" value="Мужчина")
+                    lable(for ="Мужчина") Мужчина
+                    input(type="radio" name="gender" value="Женщина")
+                    lable(for ="Женщина") Женщина
+            .reg__form__date
+                h3 дата рождения
+                input(class = "input-form" type="text" placeholder="ДД.ММ.ГГГГ")
+            .reg__form__enter__data
+                h3 данные для входа
+                input(class = "input-form" type="email" placeholder="Email")
+                input(class = "input-form" type="password" placeholder="Пароль")
+                .registration__toogle
+                    .registration__switch 
+                        .switch--slider
+                        input(type = "checkbox")
+                    p Получать спецпредложения
+            .enter-date 
+                input(class = "input-form input-form__back" type="text"  value = "зарегистрироваться" readonly)
+                input(class = "input-form__button input-form__back-button"  type = "submit" value = "arrow_forward")
+            .reg__form__else-get-acc
+                p Уже есть аккаунт на Toxin
+                a.button-no-back(href = "/html/pug/enter.html") войти

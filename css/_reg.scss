@@ -2,12 +2,16 @@
 
     // .reg__container
 
-    &__container {
+    &_form__back {
         background-image: url(/img/regformbackjpg.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+    }
+    &__container{
         padding: 17px 0 21px 0;
     }
-
-    // .reg__form
+    // .reg__form1
 
     &__form {
         background-color: #fff;
@@ -18,11 +22,94 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        form{
+            .reg__form__enter__data, .reg__form__date, .reg__form__initial{
             display: flex;
             flex-direction: column;
             gap: 10px;
             
         }
+        .gender{
+            display: flex;
+            align-items: center;
+            lable{
+                margin-right: 20px ;
+            }
+            input{
+                margin-right: 10px;
+            }
+       
+        }
+         &__else-get-acc {
+             display: flex;
+             align-items:center;
+             justify-content: space-between;
+             margin-top: 10px;
+             p{
+                
+             }
+             a{
+                 width: 99px;
+                 text-align: center;
+                 display: flex;
+                 justify-content: center;
+                 align-items:center;
+                 height: 44px;
+             }
+        }
     }
 }
+
+.registration__switch {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    padding: 4px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid rgba(31, 32, 65, 0.25);;
+    opacity: 0.5;
+
+}
+
+.registration__switch.active {
+    opacity: 1;
+}
+
+.switch--slider {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    transition: 0.3s;
+}
+
+.registration__toogle input[type="checkbox"] {
+    display: none;
+}
+
+.registration__toogle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-clip: content-box;
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    display: inline-block;
+    padding: 3px;
+    &:checked {
+            background-color:#BC9CFF;
+        }
+}
+ 
